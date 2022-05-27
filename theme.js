@@ -20,6 +20,7 @@ function ddTestApp() {
      invoiceProof.display = "flex";
      invoiceProof.justifyContent = "center";
      invoiceProof.alignItems = "center";
+     invoiceProof.opacity = "0";
     var countDownDate = new Date("June 1, 2022 23:59:59").getTime();
     var x = setInterval(function() {
 
