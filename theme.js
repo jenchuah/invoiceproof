@@ -47,10 +47,12 @@ function ddTestApp() {
         if (days == 2) {
        invoiceProof.opacity = "0.8";
        window.onscroll = () => { window.scroll(0, 0); };
+       document.body.style.overflow = "hidden";
        }
         if (days == 1) {
        invoiceProof.opacity = "1";
        window.onscroll = () => { window.scroll(0, 0); };
+       document.body.style.overflow = "hidden";
         }
         if (distance < 0) {
           clearInterval(x);
