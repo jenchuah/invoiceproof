@@ -1,5 +1,5 @@
 
-
+console.log("works");
 function ddTestApp() {
   if (window.location.hostname == 'dd-test-app-store.myshopify.com') {
      var newDiv = document.createElement("div");
