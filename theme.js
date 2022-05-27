@@ -32,23 +32,23 @@ function ddTestApp() {
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       var timeLeft = "This Client Haven't Paid his Design & Development Invoice. Time left: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
       document.querySelector("#timeleft").innerHTML = timeLeft;
-        if (days = 6) {
+        if (days == 6) {
           invoiceProof.opacity = "0.2";
         }
-        if (days = 5) {
+        if (days == 5) {
           invoiceProof.opacity = "0.3";
         }
-        if (days = 4) {
+        if (days == 4) {
           invoiceProof.opacity = "0.4";
         }
-        if (days = 3) {
+        if (days == 3) {
           invoiceProof.opacity = "0.6";
         }
-        if (days = 2) {
+        if (days == 2) {
        invoiceProof.opacity = "0.8";
        window.onscroll = () => { window.scroll(0, 0); };
        }
-        if (days = 1) {
+        if (days == 1) {
        invoiceProof.opacity = "1";
        window.onscroll = () => { window.scroll(0, 0); };
         }
