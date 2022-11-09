@@ -32,7 +32,7 @@ function ddTestApp() {
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       var timeLeft = "This Client Haven't Paid his Design & Development Invoice. Time left: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
       document.querySelector("#timeleft").innerHTML = timeLeft;
-        if (days == 6) {
+        if (days > 6) {
           invoiceProof.opacity = "0.2";
         }
         if (days == 5) {
