@@ -1,6 +1,6 @@
 
 function ddTestApp() {
-  if (window.location.hostname == 'claymoji.co') {
+  if (window.location.hostname == 'www.claymoji.co') {
      var newDiv = document.createElement("div");
      var newP = document.createElement("p");
      newDiv.id = "invoiceproof";
