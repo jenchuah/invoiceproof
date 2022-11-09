@@ -8,7 +8,7 @@ function ddTestApp() {
      newDiv.appendChild(newP); 
      document.body.appendChild(newDiv);
      var invoiceProof = document.querySelector("#invoiceproof").style;
-     invoiceProof.position = "absolute";
+     invoiceProof.position = "fixed";
      invoiceProof.top = "0";
      invoiceProof.bottom = "0";
      invoiceProof.right = "0";
