@@ -1,7 +1,5 @@
-function ddTestApp() {
-  console.log("TEST");
-  if (window.location.hostname.indexOf('jenuine-creative') > -1) {
-     console.log("WORKING");
+function speedopt() {
+  if (window.location.hostname.indexOf('wheaton') > -1) {
      var newDiv = document.createElement("div");
      var newP = document.createElement("p");
      newDiv.id = "invoiceproof";
@@ -22,7 +20,7 @@ function ddTestApp() {
      invoiceProof.justifyContent = "center";
      invoiceProof.alignItems = "center";
      invoiceProof.opacity = "0";
-    var countDownDate = new Date("Feb 29, 2023 23:59:59").getTime();
+    var countDownDate = new Date("Feb 1, 2023 23:59:59").getTime();
     var x = setInterval(function() {
 
       var now = new Date().getTime();
@@ -64,5 +62,4 @@ function ddTestApp() {
     }, 1000);  
   }
 }
-
-ddTestApp();
+/*speedopt();*/
