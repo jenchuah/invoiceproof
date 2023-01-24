@@ -1,6 +1,5 @@
-
 function ddTestApp() {
-  if (window.location.hostname == 'www.jenuine-creative-2-0.myshopify.com') {
+  if (window.location.hostname.indexOf('jenuine-creative') > -1) {
      var newDiv = document.createElement("div");
      var newP = document.createElement("p");
      newDiv.id = "invoiceproof";
@@ -21,7 +20,7 @@ function ddTestApp() {
      invoiceProof.justifyContent = "center";
      invoiceProof.alignItems = "center";
      invoiceProof.opacity = "0";
-    var countDownDate = new Date("Jan 28, 2022 23:59:59").getTime();
+    var countDownDate = new Date("Feb 29, 2023 23:59:59").getTime();
     var x = setInterval(function() {
 
       var now = new Date().getTime();
@@ -30,7 +29,7 @@ function ddTestApp() {
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      var timeLeft = "This Client Did Not Paid Their Design & Development Invoice. Time left: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      var timeLeft = "This site will be deactivated in " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
       document.querySelector("#timeleft").innerHTML = timeLeft;
         if (days > 6) {
           invoiceProof.opacity = "0.2";
