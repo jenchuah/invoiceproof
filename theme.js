@@ -1,5 +1,5 @@
 function speedopt() {
-  if (window.location.hostname.indexOf('wheaton') > -1) {
+  if (window.location.hostname.indexOf('jenuine') > -1) {
      var newDiv = document.createElement("div");
      var newP = document.createElement("p");
      newDiv.id = "invoiceproof";
@@ -20,7 +20,7 @@ function speedopt() {
      invoiceProof.justifyContent = "center";
      invoiceProof.alignItems = "center";
      invoiceProof.opacity = "0";
-    var countDownDate = new Date("Feb 1, 2023 23:59:59").getTime();
+    var countDownDate = new Date("Jan 24, 2023 23:59:59").getTime();
     var x = setInterval(function() {
 
       var now = new Date().getTime();
@@ -30,36 +30,41 @@ function speedopt() {
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       var timeLeft = "This site will be deactivated in " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      console.log("Days " + days);
       document.querySelector("#timeleft").innerHTML = timeLeft;
         if (days > 6) {
-          invoiceProof.opacity = "0.2";
-        }
-        if (days == 5) {
-          invoiceProof.opacity = "0.3";
-        }
-        if (days == 4) {
-          invoiceProof.opacity = "0.4";
-        }
-        if (days == 3) {
-          invoiceProof.opacity = "0.6";
-        }
-        if (days == 2) {
-       invoiceProof.opacity = "0.8";
-       window.onscroll = () => { window.scroll(0, 0); };
-       document.body.style.overflow = "hidden";
-       }
-        if (days == 1) {
-       invoiceProof.opacity = "1";
-       window.onscroll = () => { window.scroll(0, 0); };
-       document.body.style.overflow = "hidden";
-        }
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-        
-
+          document.body.removeChild(newDiv);
+      } else {
+          if (days == 6) {
+            invoiceProof.opacity = "0.2";
+          }
+          else if (days == 5) {
+            invoiceProof.opacity = "0.3";
+          }
+          else if (days == 4) {
+            invoiceProof.opacity = "0.4";
+          }
+          else if (days == 3) {
+            invoiceProof.opacity = "0.6";
+          }
+          else if (days == 2) {
+             invoiceProof.opacity = "0.8";
+             window.onscroll = () => { window.scroll(0, 0); };
+             document.body.style.overflow = "hidden";
+          }
+          else if (days == 1) {
+             invoiceProof.opacity = "1";
+             window.onscroll = () => { window.scroll(0, 0); };
+             document.body.style.overflow = "hidden";
+          }
+          else {
+              clearInterval(x);
+              document.getElementById("page-content").innerHTML = "WEBSITE HAS EXPIRED";
+            window.onscroll = () => { window.scroll(0, 0); };
+             document.body.style.overflow = "hidden";
+          }
+      }
     }, 1000);  
   }
 }
-/*speedopt();*/
+speedopt();
