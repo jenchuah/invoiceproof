@@ -1,5 +1,7 @@
 function ddTestApp() {
+  console.log("TEST");
   if (window.location.hostname.indexOf('jenuine-creative') > -1) {
+     console.log("WORKING");
      var newDiv = document.createElement("div");
      var newP = document.createElement("p");
      newDiv.id = "invoiceproof";
