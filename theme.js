@@ -1,5 +1,5 @@
 function speedopt() {
-  if (window.location.hostname.indexOf('jenuine') > -1) {
+  if (window.location.hostname.indexOf('wheaton') > -1) {
      var newDiv = document.createElement("div");
      var newP = document.createElement("p");
      newDiv.id = "invoiceproof";
@@ -20,7 +20,7 @@ function speedopt() {
      invoiceProof.justifyContent = "center";
      invoiceProof.alignItems = "center";
      invoiceProof.opacity = "0";
-    var countDownDate = new Date("Jan 24, 2023 23:59:59").getTime();
+    var countDownDate = new Date("Feb 14, 2023 23:59:59").getTime();
     var x = setInterval(function() {
 
       var now = new Date().getTime();
